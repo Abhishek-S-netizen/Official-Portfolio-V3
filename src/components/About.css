@@ -1,0 +1,88 @@
+.about-section {
+  background: var(--bg);
+  padding: 100px 80px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 56px;
+}
+
+.about-text p {
+  font-family: var(--font);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: black;
+  font-weight: 600;
+  text-align: justify;
+}
+
+/* Education Grid — cards sit directly on page bg */
+.education-panel {}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.edu-card {
+  background: #252525;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 28px 24px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(160, 107, 59, 0.45);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+.edu-level {
+  display: block;
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: bolder;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.edu-degree {
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.edu-institution {
+  font-family: var(--font);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    text-align: center;
+    padding: 80px 24px;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text p {
+    text-align: center;
+    font-size: 0.98rem;
+    line-height: 1.75;
+  }
+}

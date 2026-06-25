@@ -1,0 +1,104 @@
+.tech-section {
+  background: var(--bg);
+  padding: 100px 80px;
+}
+
+/* Inner wrapper — no max-width, fills available space */
+.tech-section-inner {}
+
+/* Group Label */
+.tech-group-label {
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 1000;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+/* Panel — no background wrapper, just spacing between groups */
+.tech-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+/* Tech Grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 16px;
+}
+
+/* Tech Card */
+.tech-card {
+  background: #252525;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  cursor: default;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  border-color: rgba(160, 107, 59, 0.5);
+  background: black;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tech-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Invert GitHub icon so it is visible (white) on dark cards */
+.tech-icon[alt="GitHub"] {
+  filter: invert(1);
+}
+
+.tech-name {
+  font-family: var(--font);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: left;
+}
+
+.tech-card:hover .tech-name {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+@media (max-width: 768px) {
+  .tech-section {
+    text-align: center;
+    padding: 80px 24px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+    gap: 12px;
+  }
+
+  .tech-card {
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .tech-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .tech-name {
+    font-size: 0.65rem;
+  }
+}
