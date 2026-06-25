@@ -28,7 +28,7 @@ export const projectsData = [
     image: '/CineMax.png',
     description: 'A full-stack movie ticket booking system with seat locking concurrency control and ticket QR codes.',
     techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT'],
-    details: 'CineMax is a premium, full-stack movie booking application featuring a modern React frontend and a Node.js/Express backend. Built with robust concurrency control using MongoDB TTL indexing, it secures temporary 5-minute seat locks to prevent double-booking. The platform generates client-side PDF tickets complete with functional QR codes and features a comprehensive administrative panel for analytics, user management, and showtimes CRUD operations.',
+    details: 'CineMax is a full-stack movie booking application featuring a modern React frontend and a Node.js/Express backend. Built with concurrency control using MongoDB TTL indexing, it secures temporary 5-minute seat locks to prevent double-booking. The platform generates client-side PDF tickets with functional QR codes and features a comprehensive administrative panel for analytics, user management, and showtimes CRUD operations.',
     liveUrl: 'https://cinemax-xi.vercel.app/',
     githubUrl: 'https://github.com/Abhishek-S-netizen/movie-ticket-booking-system',
   },

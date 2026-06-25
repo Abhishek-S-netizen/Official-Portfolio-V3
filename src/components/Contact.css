@@ -253,4 +253,23 @@
     letter-spacing: 0.04em;
     transition: color 0.25s ease, transform 0.25s ease;
   }
+
+  .contact-submit-btn {
+    align-self: center;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #fff;
+    background: var(--accent);
+    border: none;
+    border-radius: 28px;
+    padding: 13px 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(160, 107, 59, 0.3);
+  }
 }
