@@ -19,7 +19,7 @@ export default function ProjectsCarousel({ onSelectProject }) {
       description: 'A Porsche-inspired web platform built using Laravel, PHP, PostgreSQL, and Cloudinary. The project combines dynamic vehicle content, custom content management, and immersive frontend animations to recreate selected aspects of the Porsche digital experience. Developed as a personal portfolio project inspired by the official Porsche website, it showcases both modern frontend development and scalable backend architecture.',
       tech: ['Laravel', 'PHP', 'JavaScript', 'PostgreSQL', 'Cloudinary'],
       image: porscheImg,
-      githubUrl: 'https://github.com'
+      githubUrl: 'https://github.com/Abhishek-S-netizen/porsche-inspired-cms'
     },
     {
       id: 'autoverse',
@@ -214,7 +214,7 @@ export default function ProjectsCarousel({ onSelectProject }) {
         {/* Subtle, Classy GitHub Repository Redirect Link */}
         <div className="github-archive-wrap">
           <a
-            href="https://github.com"
+            href="https://github.com/Abhishek-S-netizen"
             target="_blank"
             rel="noopener noreferrer"
             className="github-archive-link"
