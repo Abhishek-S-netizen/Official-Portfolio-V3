@@ -353,24 +353,34 @@ export default function ContactModal({ isOpen, onClose }) {
           justify-content: space-between;
           background: #111113;
           border: 1px solid var(--border-subtle);
-          padding: 0.45rem 0.85rem;
+          padding: 0.45rem 0.75rem;
           border-radius: 8px;
           margin-bottom: 1.1rem;
-          gap: 0.5rem;
+          gap: 0.6rem;
+          min-width: 0;
         }
 
         .email-info {
           display: flex;
           align-items: center;
-          gap: 0.55rem;
+          gap: 0.5rem;
           font-family: var(--font-mono);
-          font-size: 0.82rem;
+          font-size: clamp(0.72rem, 2.7vw, 0.82rem);
           color: var(--color-sand);
+          min-width: 0;
+          flex: 1;
+        }
+
+        .email-text {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
 
         .email-icon {
           color: var(--color-crimson);
           font-size: 0.85rem;
+          flex-shrink: 0;
         }
 
         .copy-email-btn {
@@ -387,6 +397,8 @@ export default function ContactModal({ isOpen, onClose }) {
           color: var(--color-sand);
           cursor: pointer;
           transition: all var(--transition-fast);
+          flex-shrink: 0;
+          white-space: nowrap;
         }
 
         .copy-email-btn:hover {
@@ -483,11 +495,26 @@ export default function ContactModal({ isOpen, onClose }) {
         }
 
         @media (max-width: 600px) {
+          .contact-backdrop {
+            padding: 0.75rem;
+          }
           .contact-dialog {
-            padding: 1.5rem 1.25rem 1.35rem;
+            padding: 1.4rem 1.05rem 1.25rem;
           }
           .contact-title {
             font-size: 1.25rem;
+          }
+          .quick-actions-bar {
+            padding: 0.4rem 0.6rem;
+            gap: 0.45rem;
+          }
+          .email-info {
+            font-size: 0.74rem;
+            gap: 0.4rem;
+          }
+          .copy-email-btn {
+            padding: 0.28rem 0.55rem;
+            font-size: 0.72rem;
           }
         }
       `}</style>

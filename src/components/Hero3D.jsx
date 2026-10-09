@@ -35,10 +35,10 @@ export default function Hero3D() {
       // Noticeable, flowing ambient breathing waves (~4.5s rhythm)
       const ambientCrimsonX = Math.sin(elapsed * 1.1) * 18;
       const ambientCrimsonY = Math.cos(elapsed * 0.9) * 16;
-      
+
       const ambientSandX = Math.cos(elapsed * 0.95) * 18;
       const ambientSandY = Math.sin(elapsed * 1.2) * 16;
-      
+
       const ambientAngle = Math.sin(elapsed * 0.8) * 25;
 
       // Layer ambient pulse + cursor tilt
@@ -75,7 +75,7 @@ export default function Hero3D() {
   return (
     <section className="hero-section" id="hero" ref={containerRef}>
       {/* Full-Bleed Atmospheric Background with Seamless Mask Dissolve */}
-      <div 
+      <div
         className="hero-full-gradient-bg"
         style={{
           background: `
@@ -88,7 +88,7 @@ export default function Hero3D() {
 
       {/* Hero Content */}
       <div className="container hero-content-wrapper">
-        <h1 className="hero-name">A. S</h1>
+        <h1 className="hero-name">Abhishek Subramanian</h1>
         <p className="hero-title">Full-Stack Web Developer</p>
       </div>
 
