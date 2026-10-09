@@ -1,0 +1,151 @@
+/* ===================================================================
+   PORSCHE 911 TURBO S SADU EDITION DESIGN SYSTEM
+   Base: Charcoal Black (#121214)
+   Sand Titanium Accent: #BCA693
+   Carmine / Sadu Crimson Accent: #9E3E3E
+=================================================================== */
+
+:root {
+  --bg-primary: #111113;
+  --bg-secondary: #17171a;
+  --bg-card: #1c1c1f;
+  --bg-card-hover: #222226;
+  --bg-card-active: #27272c;
+  
+  --color-sand: #BCA693;
+  --color-sand-light: #d6c5b6;
+  --color-sand-glow: rgba(188, 166, 147, 0.25);
+  --color-sand-subtle: rgba(188, 166, 147, 0.12);
+
+  --color-crimson: #9E3E3E;
+  --color-crimson-bright: #bd4a4a;
+  --color-crimson-glow: rgba(158, 62, 62, 0.35);
+  --color-crimson-subtle: rgba(158, 62, 62, 0.15);
+
+  --text-main: #f5f3f0;
+  --text-muted: #9e9a95;
+  --text-dim: #6e6b66;
+
+  --border-subtle: rgba(188, 166, 147, 0.15);
+  --border-medium: rgba(188, 166, 147, 0.3);
+  --border-highlight: rgba(188, 166, 147, 0.55);
+
+  --font-jura: 'Jura', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Jura', 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(188, 166, 147, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 80% 30%, rgba(158, 62, 62, 0.05) 0%, transparent 45%),
+    linear-gradient(to bottom, #111113 0%, #151518 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2e;
+  border-radius: 4px;
+  border: 1px solid var(--border-subtle);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sand);
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-jura);
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Container: wider and full length */
+.container {
+  max-width: 1440px;
+  width: 92%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Section Header Styling */
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-sand);
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-crimson);
+  margin-left: 0.5rem;
+}
+
+/* 3D Scene Container */
+.perspective-container {
+  perspective: 1200px;
+  perspective-origin: center center;
+}
+
+/* Utility Animations */
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes glowFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}

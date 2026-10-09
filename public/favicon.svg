@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Rich Sadu Crimson Ambient Radial Glow -->
+    <radialGradient id="crimsonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9E3E3E" stop-opacity="0.48" />
+      <stop offset="55%" stop-color="#9E3E3E" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#111113" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Clip Path to ensure glow strictly conforms to the smooth rounded corners -->
+    <clipPath id="squircleClip">
+      <rect width="512" height="512" rx="108" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#squircleClip)">
+    <!-- High-Definition Smooth Rounded Charcoal Base -->
+    <rect width="512" height="512" rx="108" fill="#111113" />
+
+    <!-- Ambient Crimson Glow centered behind initials -->
+    <circle cx="256" cy="256" r="240" fill="url(#crimsonGlow)" />
+  </g>
+
+  <!-- Clean, Centered "A. S" in Desert Sand (#BCA693) -->
+  <text 
+    x="256" 
+    y="266" 
+    font-family="'Jura', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+    font-size="168" 
+    font-weight="700" 
+    letter-spacing="8" 
+    fill="#BCA693" 
+    text-anchor="middle" 
+    dominant-baseline="middle"
+  >A. S</text>
+</svg>
