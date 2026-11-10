@@ -102,9 +102,15 @@ export default function Page2_2_PointToPoint({ onBackToIndex, onNavigatePage }) 
       {/* SECTION 2: FRAME STRUCTURE DIAGRAMS                       */}
       {/* ========================================================= */}
       <section className="mt-14 sm:mt-16 pt-10 sm:pt-12 border-t border-[#8A7059]/25 space-y-10">
-        <h2 className="text-2xl sm:text-3xl text-[#232D2D]">
-          HDLC Frame Architectures
-        </h2>
+        <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+          <h2 className="text-2xl sm:text-3xl text-[#232D2D]">
+            HDLC Frame Architectures
+          </h2>
+          <span className="sm:hidden inline-flex items-center gap-1.5 text-xs font-mono text-[#8A7059] px-2.5 py-1 rounded-md w-fit font-bold">
+            <span className="text-[13px]">⇄</span>
+            <span>Swipe horizontally to view full frame</span>
+          </span>
+        </div>
 
         <div className="space-y-12">
           {/* 1. I-FRAME DIAGRAM */}
@@ -253,13 +259,19 @@ export default function Page2_2_PointToPoint({ onBackToIndex, onNavigatePage }) 
       {/* SECTION 4: CONTROL FIELD BREAKDOWN                        */}
       {/* ========================================================= */}
       <section className="mt-14 sm:mt-16 pt-10 sm:pt-12 border-t border-[#8A7059]/25 space-y-12">
-        <div>
-          <h2 className="text-2xl sm:text-3xl text-[#232D2D]">
-            Control Field Breakdown
-          </h2>
-          <p className="mt-2 text-base sm:text-lg text-[#6E5844] font-mono leading-relaxed">
-            How the 8-bit control field is organized across the three HDLC frame types.
-          </p>
+        <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+          <div>
+            <h2 className="text-2xl sm:text-3xl text-[#232D2D]">
+              Control Field Breakdown
+            </h2>
+            <p className="mt-2 text-base sm:text-lg text-[#6E5844] font-mono leading-relaxed">
+              How the 8-bit control field is organized across the three HDLC frame types.
+            </p>
+          </div>
+          <span className="sm:hidden inline-flex items-center gap-1.5 text-xs font-mono text-[#8A7059] px-2.5 py-1 rounded-md w-fit shrink-0 font-bold">
+            <span className="text-[13px]">⇄</span>
+            <span>Swipe horizontally to inspect 8 bits</span>
+          </span>
         </div>
 
         <div className="space-y-16">
@@ -502,8 +514,14 @@ export default function Page2_2_PointToPoint({ onBackToIndex, onNavigatePage }) 
 
         {/* PPP Frame Diagram */}
         <div className="space-y-3 pt-2">
-          <div className="font-semibold text-base sm:text-lg text-[#232D2D]">
-            PPP Frame Format
+          <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div className="font-semibold text-base sm:text-lg text-[#232D2D]">
+              PPP Frame Format
+            </div>
+            <span className="sm:hidden inline-flex items-center gap-1.5 text-xs font-mono text-[#8A7059]  px-2.5 py-1 rounded-md w-fit font-bold">
+              <span className="text-[13px]">⇄</span>
+              <span>Swipe horizontally to view full frame</span>
+            </span>
           </div>
           <div className="overflow-x-auto pb-2">
             <div className="min-w-[720px] flex items-stretch h-14 sm:h-16 text-xs sm:text-sm font-semibold select-none shadow-xs rounded-lg overflow-hidden border border-[#384545]/20">

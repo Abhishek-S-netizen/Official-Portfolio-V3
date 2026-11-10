@@ -356,4 +356,3 @@ export default function Page2_4_ControlledAccess({ onBackToIndex, onNavigatePage
     </NetworkPageLayout>
   );
 }
-
