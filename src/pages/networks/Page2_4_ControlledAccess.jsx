@@ -258,27 +258,74 @@ export default function Page2_4_ControlledAccess({ onBackToIndex, onNavigatePage
 
           {/* FDMA Visual Spectrum */}
           <div className="pt-2">
-            <div className="overflow-x-auto pb-2">
-              <div className="min-w-[620px] flex items-stretch h-14 rounded-lg overflow-hidden border border-[#384545]/20 text-xs font-mono font-semibold">
-                <div className="flex-1 bg-[#384545] text-white flex items-center justify-center">
+            {/* Mobile: Clean Vertical Frequency Ladder (Zero horizontal scroll, perfectly readable) */}
+            <div className="md:hidden rounded-xl overflow-hidden border border-[#8A7059]/25 bg-[#FAF8F5] shadow-xs">
+              <div className="px-3.5 py-2.5 text-[11px] font-mono uppercase tracking-wider text-[#8A7059] font-bold border-b border-[#8A7059]/20 flex items-center justify-between bg-[#F5F2EB]/60">
+                <span>Frequency Spectrum</span>
+                <span className="text-[#6E5844]">↑ Higher Frequency</span>
+              </div>
+              <div className="p-3 space-y-1.5">
+                <div className="px-3.5 py-2.5 rounded-lg bg-[#8A7059] text-white flex items-center justify-between text-xs font-mono font-semibold shadow-xs">
+                  <span>Station 4</span>
+                  <span className="text-[11px] bg-black/15 px-2 py-0.5 rounded font-mono">
+                    Band f<sub className="text-[10px] ml-0.5">4</sub>
+                  </span>
+                </div>
+                <div className="py-1 px-3 rounded bg-[#EAE5DA] text-[#6E5844] text-[10px] font-mono font-bold uppercase tracking-widest text-center">
+                  — Guard Band —
+                </div>
+                <div className="px-3.5 py-2.5 rounded-lg bg-[#384545] text-white flex items-center justify-between text-xs font-mono font-semibold shadow-xs">
+                  <span>Station 3</span>
+                  <span className="text-[11px] bg-black/20 px-2 py-0.5 rounded font-mono">
+                    Band f<sub className="text-[10px] ml-0.5">3</sub>
+                  </span>
+                </div>
+                <div className="py-1 px-3 rounded bg-[#EAE5DA] text-[#6E5844] text-[10px] font-mono font-bold uppercase tracking-widest text-center">
+                  — Guard Band —
+                </div>
+                <div className="px-3.5 py-2.5 rounded-lg bg-[#8A7059] text-white flex items-center justify-between text-xs font-mono font-semibold shadow-xs">
+                  <span>Station 2</span>
+                  <span className="text-[11px] bg-black/15 px-2 py-0.5 rounded font-mono">
+                    Band f<sub className="text-[10px] ml-0.5">2</sub>
+                  </span>
+                </div>
+                <div className="py-1 px-3 rounded bg-[#EAE5DA] text-[#6E5844] text-[10px] font-mono font-bold uppercase tracking-widest text-center">
+                  — Guard Band —
+                </div>
+                <div className="px-3.5 py-2.5 rounded-lg bg-[#384545] text-white flex items-center justify-between text-xs font-mono font-semibold shadow-xs">
+                  <span>Station 1</span>
+                  <span className="text-[11px] bg-black/20 px-2 py-0.5 rounded font-mono">
+                    Band f<sub className="text-[10px] ml-0.5">1</sub>
+                  </span>
+                </div>
+              </div>
+              <div className="px-3.5 pb-2.5 text-[10px] font-mono text-[#6E5844] text-center">
+                ↓ Lower Frequency
+              </div>
+            </div>
+
+            {/* Desktop & Tablet: Horizontal Continuous Spectrum Bar */}
+            <div className="hidden md:block">
+              <div className="w-full flex items-stretch h-14 rounded-lg overflow-hidden border border-[#384545]/20 text-xs font-mono font-semibold shadow-xs">
+                <div className="flex-1 bg-[#384545] text-white flex items-center justify-center px-2 text-center">
                   Station 1 (Band f<sub className="text-[10px] ml-0.5">1</sub>)
                 </div>
-                <div className="w-12 bg-[#EAE5DA] text-[#6E5844] flex items-center justify-center text-[10px] uppercase font-bold text-center px-1">
+                <div className="w-14 bg-[#EAE5DA] text-[#6E5844] flex items-center justify-center text-[10px] uppercase font-bold text-center px-1 tracking-wider">
                   Guard
                 </div>
-                <div className="flex-1 bg-[#8A7059] text-white flex items-center justify-center">
+                <div className="flex-1 bg-[#8A7059] text-white flex items-center justify-center px-2 text-center">
                   Station 2 (Band f<sub className="text-[10px] ml-0.5">2</sub>)
                 </div>
-                <div className="w-12 bg-[#EAE5DA] text-[#6E5844] flex items-center justify-center text-[10px] uppercase font-bold text-center px-1">
+                <div className="w-14 bg-[#EAE5DA] text-[#6E5844] flex items-center justify-center text-[10px] uppercase font-bold text-center px-1 tracking-wider">
                   Guard
                 </div>
-                <div className="flex-1 bg-[#384545] text-white flex items-center justify-center">
+                <div className="flex-1 bg-[#384545] text-white flex items-center justify-center px-2 text-center">
                   Station 3 (Band f<sub className="text-[10px] ml-0.5">3</sub>)
                 </div>
-                <div className="w-12 bg-[#EAE5DA] text-[#6E5844] flex items-center justify-center text-[10px] uppercase font-bold text-center px-1">
+                <div className="w-14 bg-[#EAE5DA] text-[#6E5844] flex items-center justify-center text-[10px] uppercase font-bold text-center px-1 tracking-wider">
                   Guard
                 </div>
-                <div className="flex-1 bg-[#8A7059] text-white flex items-center justify-center">
+                <div className="flex-1 bg-[#8A7059] text-white flex items-center justify-center px-2 text-center">
                   Station 4 (Band f<sub className="text-[10px] ml-0.5">4</sub>)
                 </div>
               </div>
