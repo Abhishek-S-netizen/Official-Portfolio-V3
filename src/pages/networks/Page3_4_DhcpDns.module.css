@@ -1,0 +1,297 @@
+/* ============================================================== */
+/* STEP 1: DHCPDISCOVER KEYFRAMES                                 */
+/* ============================================================== */
+
+/* Client to Switch */
+@keyframes discoverClientToSwitch {
+  0% {
+    transform: translate(195px, 240px);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(375px, 240px);
+    opacity: 1;
+  }
+}
+
+/* Switch to Server A */
+@keyframes discoverSwitchToServerA {
+  0% {
+    transform: translate(515px, 240px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(705px, 142px);
+    opacity: 1;
+  }
+}
+
+/* Switch to Server B */
+@keyframes discoverSwitchToServerB {
+  0% {
+    transform: translate(515px, 240px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(705px, 240px);
+    opacity: 1;
+  }
+}
+
+/* Switch to Server C */
+@keyframes discoverSwitchToServerC {
+  0% {
+    transform: translate(515px, 240px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(705px, 338px);
+    opacity: 1;
+  }
+}
+
+/* ============================================================== */
+/* STEP 2: DHCPOFFER KEYFRAMES                                   */
+/* ============================================================== */
+
+/* Server A to Switch */
+@keyframes offerServerAToSwitch {
+  0% {
+    transform: translate(705px, 142px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(515px, 240px);
+    opacity: 1;
+  }
+}
+
+/* Server B to Switch */
+@keyframes offerServerBToSwitch {
+  0% {
+    transform: translate(705px, 240px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(515px, 240px);
+    opacity: 1;
+  }
+}
+
+/* Switch to Client (Offer A leads) */
+@keyframes offerSwitchToClientA {
+  0% {
+    transform: translate(375px, 240px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(210px, 240px);
+    opacity: 1;
+  }
+}
+
+/* Switch to Client (Offer B follows) */
+@keyframes offerSwitchToClientB {
+  0% {
+    transform: translate(375px, 240px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(265px, 240px);
+    opacity: 1;
+  }
+}
+
+/* ============================================================== */
+/* STEP 3: DHCPREQUEST KEYFRAMES                                 */
+/* ============================================================== */
+
+/* Client to Switch (Requesting A) */
+@keyframes requestClientToSwitch {
+  0% {
+    transform: translate(195px, 240px);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(375px, 240px);
+    opacity: 1;
+  }
+}
+
+/* Switch to Server A */
+@keyframes requestSwitchToServerA {
+  0% {
+    transform: translate(515px, 240px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(705px, 142px);
+    opacity: 1;
+  }
+}
+
+/* Switch to Server B */
+@keyframes requestSwitchToServerB {
+  0% {
+    transform: translate(515px, 240px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(705px, 240px);
+    opacity: 1;
+  }
+}
+
+/* Switch to Server C */
+@keyframes requestSwitchToServerC {
+  0% {
+    transform: translate(515px, 240px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(705px, 338px);
+    opacity: 1;
+  }
+}
+
+/* ============================================================== */
+/* STEP 4: DHCPACK KEYFRAMES                                     */
+/* ============================================================== */
+
+/* Server A to Switch */
+@keyframes ackServerAToSwitch {
+  0% {
+    transform: translate(705px, 142px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(515px, 240px);
+    opacity: 1;
+  }
+}
+
+/* Switch to Client */
+@keyframes ackSwitchToClient {
+  0% {
+    transform: translate(375px, 240px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(210px, 240px);
+    opacity: 1;
+  }
+}
+
+/* ============================================================== */
+/* ANIMATION UTILITY CLASSES                                      */
+/* ============================================================== */
+
+/* Stage 1: Initial travel from 0s to 1.5s (relaxed, clearly visible) */
+.animDiscover1 {
+  animation: discoverClientToSwitch 1.5s cubic-bezier(0.25, 0.9, 0.35, 1) forwards;
+}
+
+/* Stage 2: Secondary broadcast travel from 1.4s onward */
+.animDiscover2A {
+  animation: discoverSwitchToServerA 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) 1.4s forwards;
+  opacity: 0;
+}
+.animDiscover2B {
+  animation: discoverSwitchToServerB 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) 1.4s forwards;
+  opacity: 0;
+}
+.animDiscover2C {
+  animation: discoverSwitchToServerC 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) 1.4s forwards;
+  opacity: 0;
+}
+
+/* Offers from servers to switch */
+.animOfferServerA {
+  animation: offerServerAToSwitch 1.5s cubic-bezier(0.25, 0.9, 0.35, 1) forwards;
+}
+.animOfferServerB {
+  animation: offerServerBToSwitch 1.5s cubic-bezier(0.25, 0.9, 0.35, 1) forwards;
+}
+
+/* Offers from switch to client in tandem */
+.animOfferClientA {
+  animation: offerSwitchToClientA 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) 1.4s forwards;
+  opacity: 0;
+}
+.animOfferClientB {
+  animation: offerSwitchToClientB 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) 1.65s forwards;
+  opacity: 0;
+}
+
+/* Request from client to switch */
+.animRequest1 {
+  animation: requestClientToSwitch 1.5s cubic-bezier(0.25, 0.9, 0.35, 1) forwards;
+}
+
+/* Request from switch to servers */
+.animRequest2A {
+  animation: requestSwitchToServerA 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) 1.4s forwards;
+  opacity: 0;
+}
+.animRequest2B {
+  animation: requestSwitchToServerB 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) 1.4s forwards;
+  opacity: 0;
+}
+.animRequest2C {
+  animation: requestSwitchToServerC 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) 1.4s forwards;
+  opacity: 0;
+}
+
+/* ACK from server A to switch */
+.animAck1 {
+  animation: ackServerAToSwitch 1.5s cubic-bezier(0.25, 0.9, 0.35, 1) forwards;
+}
+
+/* ACK from switch to client */
+.animAck2 {
+  animation: ackSwitchToClient 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) 1.4s forwards;
+  opacity: 0;
+}
+

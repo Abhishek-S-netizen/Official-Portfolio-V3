@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&amp;display=swap');
+      .didone-monogram {
+        font-family: 'Cinzel', 'Linotype Didot', 'Didot', 'Bodoni MT', 'Baskerville', 'Times New Roman', serif;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+
+  <!-- Warm Bronze Squircle Canvas -->
+  <rect width="100" height="100" rx="24" fill="#8A7059" />
+
+  <!-- High-Contrast Neo-Classical Initials A.S. in Off-White with balanced breathing room -->
+  <text
+    x="50"
+    y="53"
+    text-anchor="middle"
+    dominant-baseline="central"
+    fill="#FAF8F5"
+    class="didone-monogram"
+    font-size="35"
+  ><tspan>A</tspan><tspan dx="1.2">.</tspan><tspan dx="1.8">S</tspan><tspan dx="1.2">.</tspan></text>
+</svg>

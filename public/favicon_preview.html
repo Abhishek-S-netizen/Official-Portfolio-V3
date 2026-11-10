@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Favicon Preview</title>
+  <style>
+    body {
+      background: #1e1e1e;
+      color: #faf8f5;
+      font-family: system-ui, sans-serif;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      background: #2b2b2b;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    .light-bar {
+      background: #dee1e6;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #3c4043;
+      font-size: 13px;
+    }
+    .dark-bar {
+      background: #202124;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #e8eaed;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Favicon Display at Realistic Tab Scales</h2>
+  
+  <div class="row">
+    <!-- Light Chrome Tab Simulation -->
+    <div class="light-bar">
+      <img src="favicon.svg" width="16" height="16" />
+      <span>John Doe Reacher — Portfolio</span>
+    </div>
+
+    <!-- Dark Chrome Tab Simulation -->
+    <div class="dark-bar">
+      <img src="favicon.svg" width="16" height="16" />
+      <span>John Doe Reacher — Portfolio</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="item">
+      <span>64px</span>
+      <img src="favicon.svg" width="64" height="64" />
+    </div>
+    <div class="item">
+      <span>48px</span>
+      <img src="favicon.svg" width="48" height="48" />
+    </div>
+    <div class="item">
+      <span>32px</span>
+      <img src="favicon.svg" width="32" height="32" />
+    </div>
+    <div class="item">
+      <span>16px (Browser Tab)</span>
+      <img src="favicon.svg" width="16" height="16" />
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+@keyframes arpTravelToB {
+  0% {
+    transform: translate(195px, 310px);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(530px, 224px);
+    opacity: 1;
+  }
+}
+
+@keyframes arpTravelToC {
+  0% {
+    transform: translate(195px, 310px);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(530px, 310px);
+    opacity: 1;
+  }
+}
+
+@keyframes arpTravelToD {
+  0% {
+    transform: translate(195px, 310px);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(530px, 396px);
+    opacity: 1;
+  }
+}
+
+@keyframes arpReturnToA {
+  0% {
+    transform: translate(535px, 224px);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(210px, 305px);
+    opacity: 1;
+  }
+}
+
+@keyframes arpDiscardC {
+  0% {
+    transform: translate(685px, 318px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(742px, 318px);
+    opacity: 1;
+  }
+}
+
+@keyframes arpDiscardD {
+  0% {
+    transform: translate(685px, 413px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(742px, 413px);
+    opacity: 1;
+  }
+}
+
+.motionArpToB {
+  animation: arpTravelToB 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) forwards;
+}
+
+.motionArpToC {
+  animation: arpTravelToC 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) forwards;
+}
+
+.motionArpToD {
+  animation: arpTravelToD 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) forwards;
+}
+
+.motionArpReturn {
+  animation: arpReturnToA 1.6s cubic-bezier(0.25, 0.9, 0.35, 1) forwards;
+}
+
+.motionArpDiscardC {
+  animation: arpDiscardC 0.8s cubic-bezier(0.2, 0.9, 0.3, 1) forwards;
+}
+
+.motionArpDiscardD {
+  animation: arpDiscardD 0.8s cubic-bezier(0.2, 0.9, 0.3, 1) forwards;
+}
+
