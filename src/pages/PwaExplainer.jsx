@@ -45,9 +45,9 @@ export default function PwaExplainer({ onBack }) {
   };
 
   return (
-    <div className="min-h-screen bg-[#F5F2EB] text-[#232D2D] selection:bg-[#8A7059]/20 overflow-x-hidden">
+    <div className="min-h-screen bg-[#F5F2EB] text-[#232D2D] selection:bg-[#8A7059]/20 [overflow-x:clip]">
       {/* Top sticky minimalist bar */}
-      <nav className="sticky top-0 z-30 bg-[#F5F2EB]/95 backdrop-blur-md border-b border-[#8A7059]/25 px-4 sm:px-8 md:px-12 py-4">
+      <nav className="sticky top-0 z-30 bg-[#F5F2EB] border-b border-[#8A7059]/25 px-4 sm:px-8 md:px-12 py-3.5 sm:py-4 transition-colors">
         <div className="w-[88%] max-w-[1440px] mx-auto flex items-center justify-between">
           <button
             type="button"

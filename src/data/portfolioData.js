@@ -116,8 +116,8 @@ export const projectsData = [
     imageClass: "object-cover object-left-top",
     tech: ["Python", "YOLOv8", "OpenCV", "Streamlit", "Deep Learning"],
     status: "AI / CV",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
+    githubUrl: "https://github.com/Abhishek-S-netizen/PPE-safety-monitor",
+    liveUrl: "https://ppe-safety-monitor-m2mkaj7emw3n4th9qqfax7.streamlit.app/"
   },
   {
     id: "predictive-maintenance",

@@ -67,7 +67,7 @@ export default function NetworkPageLayout({
   const activeTitle = title || meta.current?.title || '';
 
   return (
-    <div className="min-h-screen bg-[#F5F2EB] text-[#232D2D] selection:bg-[#8A7059]/20 font-sans overflow-x-hidden">
+    <div className="min-h-screen bg-[#F5F2EB] text-[#232D2D] selection:bg-[#8A7059]/20 font-sans [overflow-x:clip]">
       {/* Top sticky navbar */}
       <nav className="sticky top-0 z-30 bg-[#F5F2EB] border-b border-[#8A7059]/25 px-4 sm:px-8 md:px-12 py-3.5 sm:py-4 transition-colors">
         <div className="w-[88%] max-w-[1440px] mx-auto flex items-center justify-between">
