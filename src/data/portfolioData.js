@@ -1,6 +1,6 @@
 export const profileData = {
-  firstName: "John",
-  lastName: "Doe Reacher",
+  firstName: "Abhishek",
+  lastName: "Subramanian",
   initials: "A.S.",
   roles: [
     "Aspiring web developer",
@@ -9,10 +9,10 @@ export const profileData = {
     "CS undergrad & builder"
   ],
   bio: "I'm a third-year Computer Science student with a passion for building web applications that are both functional and enjoyable to use. I enjoy turning ideas into real products with a particular focus on creating clean, intuitive experiences that don't feel overcomplicated — a philosophy inspired by Porsche's minimalist approach to design and engineering, favoring simplicity, functionality and purpose.",
-  github: "https://github.com",
-  linkedin: "https://linkedin.com",
-  email: "mailto:hello@example.com",
-  resumeUrl: "#"
+  github: "https://github.com/Abhishek-S-netizen",
+  linkedin: "https://www.linkedin.com/in/abhishek-subramanian-64811b31a/",
+  email: "abhisheksubramanian06@gmail.com",
+  resumeUrl: "/Abhishek_Subramanian.pdf"
 };
 
 export const educationData = [
@@ -79,7 +79,7 @@ export const projectsData = [
     imageClass: "object-cover object-center",
     tech: ["Laravel", "PHP", "PostgreSQL", "Bootstrap", "JavaScript", "HTML5/CSS3"],
     status: "Source Available",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/Abhishek-S-netizen/AutoVerse",
     liveUrl: null
   },
   {
@@ -91,8 +91,8 @@ export const projectsData = [
     imageClass: "object-cover object-center",
     tech: ["React", "Node.js", "Express", "MongoDB TTL", "PDF & QR Gen"],
     status: "Full-Stack",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
+    githubUrl: "https://github.com/Abhishek-S-netizen/movie-ticket-booking-system",
+    liveUrl: "https://cinemax-xi.vercel.app/"
   },
   /* {
     id: "porsche",
@@ -128,8 +128,8 @@ export const projectsData = [
     imageClass: "object-cover object-left-top",
     tech: ["Python", "Scikit-Learn", "XGBoost", "SHAP", "Streamlit"],
     status: "Data & ML",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
+    githubUrl: "https://github.com/Abhishek-S-netizen/Predictive-Maintenance",
+    liveUrl: "https://predictive-maintenance-y7yvnhdeih7i624baocrwp.streamlit.app/"
   },
   {
     id: "transaction-fraud-detection",
@@ -152,8 +152,8 @@ export const projectsData = [
     imageClass: "object-cover object-left-top",
     tech: ["Python", "Pandas", "Scikit-Learn", "Streamlit", "Data Viz"],
     status: "Data & ML",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
+    githubUrl: "https://github.com/Abhishek-S-netizen/Employee_Attrition_Model",
+    liveUrl: "https://employeeattritionmodel-4ydjb9yfhahfpmegpvpbmo.streamlit.app/"
   },
 ];
 
@@ -209,7 +209,7 @@ export const certificationsData = [
     title: "Python 101 for Data Science",
     issuer: "Cognitive Class",
     date: "November 2025",
-    credentialUrl: "#"
+    credentialUrl: "https://courses.cognitiveclass.ai/certificates/c9bb963a393e4955a0aa4b3b01d85c39"
   },
   {
     id: 5,
@@ -217,7 +217,7 @@ export const certificationsData = [
     title: "Introduction to HTML, CSS, & JavaScript",
     issuer: "IBM",
     date: "May 2025",
-    credentialUrl: "#"
+    credentialUrl: "https://www.coursera.org/account/accomplishments/verify/B8JPGWB3S26A"
   },
   {
     id: 6,
@@ -225,6 +225,6 @@ export const certificationsData = [
     title: "Python for Data Science, AI & Development",
     issuer: "IBM",
     date: "June 2024",
-    credentialUrl: "#"
+    credentialUrl: "https://www.coursera.org/account/accomplishments/verify/ZXBERQTPK4FL"
   }
 ];

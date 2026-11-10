@@ -1009,52 +1009,56 @@ export default function App() {
             Get in touch
           </h2>
 
-          <div className="flex flex-wrap items-center gap-x-6 sm:gap-x-7 gap-y-3.5 mb-14">
-            <a
-              href={profileData.email}
-              className="group inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-[#8A7059] hover:bg-[#78604B] text-[#F5F2EB] font-medium text-sm shadow-sm transition-all hover:-translate-y-0.5"
-            >
-              <span className='font-bold'>Say Hello</span>
-              <span className="font-mono font-bold text-xs transition-transform duration-200 transform group-hover:translate-x-0.5">
-                →
-              </span>
-            </a>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-x-7 mb-14">
+            <div>
+              <a
+                href={profileData.email}
+                className="group inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-[#8A7059] hover:bg-[#78604B] text-[#F5F2EB] font-medium text-sm shadow-sm transition-all hover:-translate-y-0.5"
+              >
+                <span className="font-bold">Say Hello</span>
+                <span className="font-mono font-bold text-xs transition-transform duration-200 transform group-hover:translate-x-0.5">
+                  →
+                </span>
+              </a>
+            </div>
 
-            <a
-              href={profileData.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-1.5 text-sm sm:text-base font-medium text-[#6E5844] hover:text-[#232D2D] transition-colors"
-            >
-              <span className="font-bold">LinkedIn</span>
-              <span className="font-mono font-bold text-xs transition-transform duration-200 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-                ↗
-              </span>
-            </a>
+            <div className="flex items-center gap-x-5 sm:gap-x-7 gap-y-2 flex-wrap text-sm sm:text-base">
+              <a
+                href={profileData.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-1.5 font-medium text-[#6E5844] hover:text-[#232D2D] transition-colors"
+              >
+                <span className="font-bold">LinkedIn</span>
+                <span className="font-mono font-bold text-xs transition-transform duration-200 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                  ↗
+                </span>
+              </a>
 
-            <a
-              href={profileData.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-1.5 text-sm sm:text-base font-medium text-[#6E5844] hover:text-[#232D2D] transition-colors"
-            >
-              <span className="font-bold">GitHub</span>
-              <span className="font-mono font-bold text-xs transition-transform duration-200 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-                ↗
-              </span>
-            </a>
+              <a
+                href={profileData.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-1.5 font-medium text-[#6E5844] hover:text-[#232D2D] transition-colors"
+              >
+                <span className="font-bold">GitHub</span>
+                <span className="font-mono font-bold text-xs transition-transform duration-200 transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                  ↗
+                </span>
+              </a>
 
-            <a
-              href={profileData.resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-1.5 text-sm sm:text-base font-medium text-[#6E5844] hover:text-[#232D2D] transition-colors"
-            >
-              <span className="font-bold">Resume / CV</span>
-              <span className="font-mono font-bold text-xs transition-transform duration-200 transform group-hover:translate-y-0.5">
-                ↓
-              </span>
-            </a>
+              <a
+                href={profileData.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-1.5 font-medium text-[#6E5844] hover:text-[#232D2D] transition-colors"
+              >
+                <span className="font-bold">Resume / CV</span>
+                <span className="font-mono font-bold text-xs transition-transform duration-200 transform group-hover:translate-y-0.5">
+                  ↓
+                </span>
+              </a>
+            </div>
           </div>
 
           {/* Minimal Bottom Footer */}

@@ -142,9 +142,8 @@ export default function ProjectsCarousel() {
         onMouseMove={handleMouseMove}
         onMouseUp={stopDragging}
         onMouseLeave={stopDragging}
-        className={`flex gap-6 overflow-x-auto no-scrollbar pb-5 pt-1 items-stretch select-none ${
-          isDragging ? 'cursor-grabbing' : 'cursor-grab'
-        }`}
+        className={`flex gap-6 overflow-x-auto no-scrollbar pb-5 pt-1 items-stretch select-none ${isDragging ? 'cursor-grabbing' : 'cursor-grab'
+          }`}
       >
         {projectsData.map((project) => {
           return (
@@ -171,9 +170,8 @@ export default function ProjectsCarousel() {
 
               {/* Slimmer Inset Window Frame - Pushed Up, Consistent Size Across Cards */}
               <div
-                className={`relative w-full h-[200px] shrink-0 mt-3 rounded-xl overflow-hidden border border-white/10 shadow-inner ${
-                  project.imageBg || 'bg-[#182121]'
-                }`}
+                className={`relative w-full h-[200px] shrink-0 mt-3 rounded-xl overflow-hidden border border-white/10 shadow-inner ${project.imageBg || 'bg-[#182121]'
+                  }`}
               >
                 <img
                   src={project.image}
@@ -182,9 +180,8 @@ export default function ProjectsCarousel() {
                   style={{
                     backfaceVisibility: 'hidden',
                   }}
-                  className={`w-full h-full ${
-                    project.imageClass || 'object-cover object-top'
-                  } will-change-transform transition-transform duration-700 group-hover:scale-105 pointer-events-none select-none`}
+                  className={`w-full h-full ${project.imageClass || 'object-cover object-top'
+                    } will-change-transform transition-transform duration-700 group-hover:scale-105 pointer-events-none select-none`}
                   loading="lazy"
                 />
 
@@ -200,8 +197,9 @@ export default function ProjectsCarousel() {
                       className="w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center bg-[#8A7059] text-white border border-white/20 hover:bg-[#9D8269] hover:scale-105 transition-all duration-300 shadow-md"
                     >
                       <svg
-                        className="w-4.5 h-4.5 sm:w-5 sm:h-5"
-                        fill="currentColor"
+                        width="20"
+                        height="20"
+                        className="w-5 h-5 shrink-0 text-white fill-current"
                         viewBox="0 0 24 24"
                       >
                         <path
@@ -222,7 +220,9 @@ export default function ProjectsCarousel() {
                       className="w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center bg-[#8A7059] text-white border border-[#8A7059] hover:bg-[#9D8269] hover:scale-105 transition-all duration-300 shadow-md"
                     >
                       <svg
-                        className="w-4 h-4 sm:w-4.5 sm:h-4.5"
+                        width="18"
+                        height="18"
+                        className="w-[18px] h-[18px] shrink-0 text-white"
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2.2"
@@ -261,11 +261,10 @@ export default function ProjectsCarousel() {
                   }
                 }}
                 aria-label={`Scroll to ${p.title}`}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  isCurrent
+                className={`h-2 rounded-full transition-all duration-300 ${isCurrent
                     ? 'w-8 bg-[#8A7059]'
                     : 'w-2.5 bg-[#384545]/30 hover:bg-[#384545]/60'
-                }`}
+                  }`}
               />
             );
           })}
