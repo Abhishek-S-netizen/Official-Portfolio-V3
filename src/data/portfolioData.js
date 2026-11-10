@@ -92,7 +92,7 @@ export const projectsData = [
     tech: ["React", "Node.js", "Express", "MongoDB TTL", "PDF & QR Gen"],
     status: "Full-Stack",
     githubUrl: "https://github.com/Abhishek-S-netizen/movie-ticket-booking-system",
-    liveUrl: "https://cinemax-xi.vercel.app/"
+    liveUrl: null
   },
   /* {
     id: "porsche",
@@ -129,7 +129,7 @@ export const projectsData = [
     tech: ["Python", "Scikit-Learn", "XGBoost", "SHAP", "Streamlit"],
     status: "Data & ML",
     githubUrl: "https://github.com/Abhishek-S-netizen/Predictive-Maintenance",
-    liveUrl: "https://predictive-maintenance-y7yvnhdeih7i624baocrwp.streamlit.app/"
+    liveUrl: null
   },
   {
     id: "transaction-fraud-detection",
@@ -140,8 +140,8 @@ export const projectsData = [
     imageClass: "object-cover object-left-top",
     tech: ["Python", "Scikit-Learn", "Pandas", "XGboost", "Classification"],
     status: "Data & ML",
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com"
+    githubUrl: "https://github.com/Abhishek-S-netizen/transaction-fraud-detection",
+    liveUrl: "https://transaction-fraud-detection-eta.vercel.app/"
   },
   {
     id: "ibm-attrition",
@@ -153,7 +153,7 @@ export const projectsData = [
     tech: ["Python", "Pandas", "Scikit-Learn", "Streamlit", "Data Viz"],
     status: "Data & ML",
     githubUrl: "https://github.com/Abhishek-S-netizen/Employee_Attrition_Model",
-    liveUrl: "https://employeeattritionmodel-4ydjb9yfhahfpmegpvpbmo.streamlit.app/"
+    liveUrl: null
   },
 ];
 

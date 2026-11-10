@@ -68,8 +68,8 @@ export default function NetworkPageLayout({
 
   return (
     <div className="min-h-screen bg-[#F5F2EB] text-[#232D2D] selection:bg-[#8A7059]/20 font-sans [overflow-x:clip]">
-      {/* Top sticky navbar */}
-      <nav className="sticky top-0 z-30 bg-[#F5F2EB] border-b border-[#8A7059]/25 px-4 sm:px-8 md:px-12 py-3.5 sm:py-4 transition-colors">
+      {/* Top fixed navbar */}
+      <nav className="fixed top-0 left-0 right-0 z-40 bg-[#F5F2EB]/95 backdrop-blur-md border-b border-[#8A7059]/25 px-4 sm:px-8 md:px-12 py-3.5 sm:py-4 transition-colors">
         <div className="w-[88%] max-w-[1440px] mx-auto flex items-center justify-between">
           <button
             type="button"
@@ -87,7 +87,7 @@ export default function NetworkPageLayout({
       </nav>
 
       {/* Main Content Container (Full Width, Standard Explainer Shell) */}
-      <main className="w-[88%] max-w-[1440px] mx-auto px-2 sm:px-6 md:px-10 py-12 sm:py-16 pb-24">
+      <main className="w-[88%] max-w-[1440px] mx-auto px-2 sm:px-6 md:px-10 pt-24 sm:pt-28 pb-24">
         {/* Document Header */}
         <header className="mb-12 border-b border-[#8A7059]/25 pb-8 sm:pb-10">
           <div className="inline-block py-0.5 rounded font-mono text-xs uppercase tracking-widest text-[#384545] font-semibold mb-3">

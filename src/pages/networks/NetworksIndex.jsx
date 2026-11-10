@@ -34,13 +34,13 @@ export default function NetworksIndex({ onBack, onSelectPage, initialPageId }) {
 
   return (
     <div className="min-h-screen bg-[#F5F2EB] text-[#232D2D] selection:bg-[#8A7059]/20 overflow-x-hidden">
-      {/* Top sticky minimalist bar */}
-      <nav className="sticky top-0 z-30 bg-[#F5F2EB]/95 backdrop-blur-md border-b border-[#8A7059]/25 px-4 sm:px-8 md:px-12 py-4">
+      {/* Top fixed minimalist bar */}
+      <nav className="fixed top-0 left-0 right-0 z-40 bg-[#F5F2EB]/95 backdrop-blur-md border-b border-[#8A7059]/25 px-4 sm:px-8 md:px-12 py-3.5 sm:py-4 transition-colors">
         <div className="w-[88%] max-w-[1440px] mx-auto flex items-center justify-between">
           <button
             type="button"
             onClick={onBack}
-            className="group inline-flex items-center gap-2 text-xs sm:text-sm font-mono uppercase tracking-wider text-[#6E5844] hover:text-[#232D2D] transition-colors"
+            className="group inline-flex items-center gap-2 text-xs sm:text-sm font-mono uppercase tracking-wider text-[#6E5844] hover:text-[#232D2D] transition-colors cursor-pointer"
           >
             <span className="transition-transform group-hover:-translate-x-1">←</span>
             <span>Back to Portfolio</span>
@@ -49,7 +49,7 @@ export default function NetworksIndex({ onBack, onSelectPage, initialPageId }) {
       </nav>
 
       {/* Main Container */}
-      <main className="w-[88%] max-w-[1440px] mx-auto px-2 sm:px-6 md:px-10 py-12 sm:py-16 pb-24">
+      <main className="w-[88%] max-w-[1440px] mx-auto px-2 sm:px-6 md:px-10 pt-24 sm:pt-28 pb-24">
         {/* Main Header */}
         <header className="mb-12 border-b border-[#8A7059]/25 pb-10">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#232D2D] leading-[1.15]">
@@ -168,9 +168,8 @@ export default function NetworksIndex({ onBack, onSelectPage, initialPageId }) {
 
                       {/* Expandable Topics & Action Body with Smooth 200ms Transition */}
                       <div
-                        className={`grid transition-[grid-template-rows] duration-200 ease-out ${
-                          isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
-                        }`}
+                        className={`grid transition-[grid-template-rows] duration-200 ease-out ${isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                          }`}
                       >
                         <div className="overflow-hidden">
                           <div className="px-4 pb-6 pt-2 pl-11 sm:pl-16 pr-6">
