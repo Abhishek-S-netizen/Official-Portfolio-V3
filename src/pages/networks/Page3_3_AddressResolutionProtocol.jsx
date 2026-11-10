@@ -95,9 +95,15 @@ export default function Page3_3_AddressResolutionProtocol({ onBackToIndex, onNav
       {/* SECTION 2: PROCESS & INTERACTIVE STEPPER VISUALIZER */}
       {/* ============================================================== */}
       <section className="mt-16 pt-12 border-t border-[#8A7059]/25 space-y-6">
-        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-[#232D2D]">
-          Process
-        </h2>
+        <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-[#232D2D]">
+            Process
+          </h2>
+          <span className="sm:hidden inline-flex items-center gap-1.5 text-xs font-mono text-[#8A7059] bg-[#8A7059]/10 px-2.5 py-1 rounded-md w-fit">
+            <span className="text-[13px]">⇄</span>
+            <span>Swipe horizontally to view full simulation</span>
+          </span>
+        </div>
         <p className="text-base sm:text-lg text-[#283535] leading-relaxed">
           Consider an example where <strong className="text-[#232D2D]">Node A</strong> wants to send data to <strong className="text-[#00A3FF]">Node B</strong>. <strong className="text-[#232D2D]">Node A</strong> knows its own IP and MAC address as well as the IP address of <strong className="text-[#00A3FF]">Node B</strong>.
         </p>
@@ -175,7 +181,7 @@ export default function Page3_3_AddressResolutionProtocol({ onBackToIndex, onNav
         </div>
 
         {/* Interactive SVG Diagram Canvas (Crisp Vector Graphic Mirroring Slide) */}
-        <div className="py-6 overflow-x-auto">
+        <div className="py-6 overflow-x-auto pb-4">
           <div className="min-w-[860px] w-full max-w-5xl mx-auto">
             <svg
               className="w-full h-auto text-[#232D2D] select-none"
