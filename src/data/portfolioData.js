@@ -83,6 +83,18 @@ export const projectsData = [
     liveUrl: null
   },
   {
+    id: "porsche",
+    title: "Porsche",
+    subtitle: "A Porsche showcase website",
+    shortDesc: "Immersive automotive web platform inspired by Porsche's minimalist digital experience. Built using Laravel, PHP and PostgreSQL.",
+    image: "/images/Porsche.png",
+    imageClass: "object-cover object-center",
+    tech: ["Laravel", "PHP", "PostgreSQL", "Bootstrap", "JavaScript", "HTML5/CSS3"],
+    status: "Source Available",
+    githubUrl: "https://github.com/Abhishek-S-netizen/porsche-inspired-cms",
+    liveUrl: null
+  },
+  {
     id: "cinemax",
     title: "CineMax",
     subtitle: "Concurrent Movie Booking System",
@@ -94,19 +106,6 @@ export const projectsData = [
     githubUrl: "https://github.com/Abhishek-S-netizen/movie-ticket-booking-system",
     liveUrl: null
   },
-  /* {
-    id: "porsche",
-    title: "Porsche 911 GT3 S/C",
-    subtitle: "Porsche Digital Experience",
-    shortDesc: "Immersive automotive web platform inspired by Porsche's minimalist digital experience.",
-    fullDesc: "A Porsche-inspired web platform built using Laravel, PHP, PostgreSQL, and Cloudinary. The project combines dynamic vehicle content, custom content management, and immersive frontend animations to recreate selected aspects of the Porsche digital experience. Developed as a personal portfolio project inspired by the official Porsche website, it showcases both modern frontend development and scalable backend architecture.",
-    image: "/images/Porsche.png",
-    imageClass: "object-cover object-[82%_center]",
-    tech: ["Laravel", "PHP", "PostgreSQL", "Cloudinary", "Animations"],
-    status: "Work in Progress",
-    githubUrl: "https://github.com",
-    liveUrl: null
-  }, */
   {
     id: "ppe-detection",
     title: "PPE Compliance Detection",
